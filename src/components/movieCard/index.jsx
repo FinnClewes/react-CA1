@@ -20,7 +20,7 @@ export default function MovieCard({ movie, action }) {
 
   const { favorites, addToFavorites } = useContext(MoviesContext);
   const date = new Date (movie.release_date);
-  const formattedDate = date.toLocaleDateString('en-UK', { day: "numeric", month: "short", year: "2-digit"});
+  const formattedDate = date.toLocaleDateString('en-UK', { day: "2-digit", month: "short", year: "2-digit"});
 
   if (favorites.find((id) => id === movie.id)) {
     movie.favorite = true;
