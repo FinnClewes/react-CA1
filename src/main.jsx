@@ -7,6 +7,7 @@ import HomePage from "./pages/homePage";
 import MoviePage from "./pages/movieDetailsPage";
 import FavoriteMoviesPage from "./pages/favoriteMoviesPage";
 import MovieReviewPage from "./pages/movieReviewPage";
+import TrendingTodayPage from "./pages/trendingTodayPage";
 import TrendingThisWeekPage from "./pages/trendingThisWeekPage";
 import NowPlayingPage from "./pages/nowPlayingPage";
 import SiteHeader from './components/siteHeader';
@@ -32,6 +33,7 @@ const App = () => {
         <SiteHeader />
         <MoviesContextProvider>
           <Routes>
+            <Route path="/movies/trending/today" element={<TrendingTodayPage />}></Route>
             <Route path="/movies/trending/this-week" element={<TrendingThisWeekPage />}></Route>
             <Route path="/movies/now-playing" element={<NowPlayingPage />}></Route>
             <Route path="/movies/favorites" element={<FavoriteMoviesPage />} />

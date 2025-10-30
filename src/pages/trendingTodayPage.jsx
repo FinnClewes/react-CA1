@@ -1,14 +1,14 @@
 import React from "react";
-import { getTrendingThisWeekMovies } from "../api/tmdb-api";
+import { getTrendingTodayMovies } from "../api/tmdb-api";
 import PageTemplate from '../components/templateMovieListPage';
 import { useQuery } from "@tanstack/react-query";
 import Spinner from "../components/spinner";
 
-const TrendingThisWeekPage = () => {
+const TrendingTodayPage = () => {
 
     const { data, error, isPending, isError  } = useQuery({
         queryKey: ['trending'],
-        queryFn: getTrendingThisWeekMovies,    
+        queryFn: getTrendingTodayMovies,    
     })
 
     if (isPending) {
@@ -23,7 +23,7 @@ const TrendingThisWeekPage = () => {
 
     return (
         <PageTemplate
-            title="Trending This Week"
+            title="Trending Today"
             movies={movies}
             action={(movie) => {
             //return <AddToWatchlistIcon movie={movie} />
@@ -32,4 +32,4 @@ const TrendingThisWeekPage = () => {
     );
 };
 
-export default TrendingThisWeekPage;
+export default TrendingTodayPage;
