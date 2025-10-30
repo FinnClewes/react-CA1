@@ -9,7 +9,7 @@ import FavoriteMoviesPage from "./pages/favoriteMoviesPage";
 import MovieReviewPage from "./pages/movieReviewPage";
 import TrendingTodayPage from "./pages/trendingTodayPage";
 import TrendingThisWeekPage from "./pages/trendingThisWeekPage";
-import TrendingThisMonthPage from "./pages/trendingThisMonthPage";
+//import TrendingThisMonthPage from "./pages/trendingThisMonthPage";
 import NowPlayingPage from "./pages/nowPlayingPage";
 import TopRatedPage from "./pages/topRatedPage";
 import SiteHeader from './components/siteHeader';
