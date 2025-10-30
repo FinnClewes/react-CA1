@@ -37,7 +37,7 @@ const App = () => {
           <Routes>
             <Route path="/movies/trending/today" element={<TrendingTodayPage />}></Route>
             <Route path="/movies/trending/this-week" element={<TrendingThisWeekPage />}></Route>
-            <Route path="/movies/trending/this-month" element={<TrendingThisMonthPage />}></Route>
+            {/* <Route path="/movies/trending/this-month" element={<TrendingThisMonthPage />}></Route> */}
             <Route path="/movies/now-playing" element={<NowPlayingPage />}></Route>
             <Route path="/movies/top-rated" element={<TopRatedPage />}></Route>
             <Route path="/movies/favorites" element={<FavoriteMoviesPage />} />

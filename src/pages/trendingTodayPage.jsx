@@ -7,7 +7,7 @@ import Spinner from "../components/spinner";
 const TrendingTodayPage = () => {
 
     const { data, error, isPending, isError  } = useQuery({
-        queryKey: ['trending'],
+        queryKey: ['trending-day'],
         queryFn: getTrendingTodayMovies,    
     })
 

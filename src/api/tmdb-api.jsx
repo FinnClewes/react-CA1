@@ -46,21 +46,21 @@ export const getTrendingThisWeekMovies = () => {
   });
 };
 
-export const getTrendingThisMonthMovies = () => {
-  return fetch(
-    `https://api.themoviedb.org/3/trending/movie/month?api_key=${import.meta.env.VITE_TMDB_KEY}`
-  ).then( (response) => {
-    if (!response.ok) {
-      return response.json().then((error) => {
-        throw new Error(error.status_message || "Something went wrong");
-      });
-    }
-    return response.json();
-  })
-  .catch((error) => {
-    throw error
-  });
-};
+// export const getTrendingThisMonthMovies = () => {
+//   return fetch(
+//     `https://api.themoviedb.org/3/trending/movie/month?api_key=${import.meta.env.VITE_TMDB_KEY}`
+//   ).then( (response) => {
+//     if (!response.ok) {
+//       return response.json().then((error) => {
+//         throw new Error(error.status_message || "Something went wrong");
+//       });
+//     }
+//     return response.json();
+//   })
+//   .catch((error) => {
+//     throw error
+//   });
+// };
 
 export const getNowPlayingMovies = () => {
   return fetch(
