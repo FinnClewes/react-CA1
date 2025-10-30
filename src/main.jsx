@@ -6,7 +6,9 @@ import { ReactQueryDevtools } from '@tanstack/react-query-devtools'
 import HomePage from "./pages/homePage";
 import MoviePage from "./pages/movieDetailsPage";
 import FavoriteMoviesPage from "./pages/favoriteMoviesPage";
+import WatchlistPage from "./pages/watchlistPage";
 import MovieReviewPage from "./pages/movieReviewPage";
+import UpcomingMoviesPage from "./pages/upcomingMoviesPage";
 import TrendingTodayPage from "./pages/trendingTodayPage";
 import TrendingThisWeekPage from "./pages/trendingThisWeekPage";
 //import TrendingThisMonthPage from "./pages/trendingThisMonthPage";
@@ -41,6 +43,8 @@ const App = () => {
             <Route path="/movies/now-playing" element={<NowPlayingPage />}></Route>
             <Route path="/movies/top-rated" element={<TopRatedPage />}></Route>
             <Route path="/movies/favorites" element={<FavoriteMoviesPage />} />
+            <Route path="/movies/upcoming" element={<UpcomingMoviesPage />} />
+            <Route path="/movies/watchlist" element={<WatchlistPage />} />
             <Route path="/reviews/:id" element={<MovieReviewPage />} />
             <Route path="/reviews/form" element={<AddMovieReviewPage />} />
             <Route path="/movies/:id" element={<MoviePage />} />
