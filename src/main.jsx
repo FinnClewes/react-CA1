@@ -9,7 +9,9 @@ import FavoriteMoviesPage from "./pages/favoriteMoviesPage";
 import MovieReviewPage from "./pages/movieReviewPage";
 import TrendingTodayPage from "./pages/trendingTodayPage";
 import TrendingThisWeekPage from "./pages/trendingThisWeekPage";
+import TrendingThisMonthPage from "./pages/trendingThisMonthPage";
 import NowPlayingPage from "./pages/nowPlayingPage";
+import TopRatedPage from "./pages/topRatedPage";
 import SiteHeader from './components/siteHeader';
 import MoviesContextProvider from "./contexts/moviesContext";
 import AddMovieReviewPage from './pages/addMovieReviewPage'
@@ -35,7 +37,9 @@ const App = () => {
           <Routes>
             <Route path="/movies/trending/today" element={<TrendingTodayPage />}></Route>
             <Route path="/movies/trending/this-week" element={<TrendingThisWeekPage />}></Route>
+            <Route path="/movies/trending/this-month" element={<TrendingThisMonthPage />}></Route>
             <Route path="/movies/now-playing" element={<NowPlayingPage />}></Route>
+            <Route path="/movies/top-rated" element={<TopRatedPage />}></Route>
             <Route path="/movies/favorites" element={<FavoriteMoviesPage />} />
             <Route path="/reviews/:id" element={<MovieReviewPage />} />
             <Route path="/reviews/form" element={<AddMovieReviewPage />} />

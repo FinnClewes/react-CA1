@@ -27,6 +27,7 @@ const SiteHeader = () => {
     { label: "Home", path: "/" },
     { label: "Favorites", path: "/movies/favorites" },
     { label: "Now Playing", path: "/movies/now-playing" },
+    { label: "Top Rated", path: "/movies/top-rated" },
     { label: "Trending Today", path: "/movies/trending/today" },
     { label: "Trending This Week", path: "/movies/trending/this-week" },
     { label: "Trending This Month", path: "/movies/trending/this-month"},
@@ -48,9 +49,9 @@ const SiteHeader = () => {
           <Typography variant="h4" sx={{ flexGrow: 1 }}>
             TMDB Client
           </Typography>
-          <Typography variant="h6" sx={{ flexGrow: 1 }}>
+          {/* <Typography variant="h6" sx={{ flexGrow: 1 }}>
             All you ever wanted to know about Movies!
-          </Typography>
+          </Typography> */}
             {isMobile ? (
               <>
                 <IconButton
