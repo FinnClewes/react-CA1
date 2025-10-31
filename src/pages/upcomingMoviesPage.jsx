@@ -22,6 +22,11 @@ const UpcomingMoviesPage = () => {
 
     const movies = data.results;
 
+    // Redundant, but necessary to avoid app crashing.
+    const watchlist = movies.filter(m => m.watchlist)
+    localStorage.setItem('watchlst', JSON.stringify(watchlist))
+    const addToWatchlist = (movieId) => true
+
     return (
         <PageTemplate
             title="Upcoming Movies"

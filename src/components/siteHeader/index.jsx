@@ -32,7 +32,6 @@ const SiteHeader = () => {
     { label: "Top Rated", path: "/movies/top-rated" },
     { label: "Trending Today", path: "/movies/trending/today" },
     { label: "Trending This Week", path: "/movies/trending/this-week" },
-  //  { label: "Trending This Month", path: "/movies/trending/this-month"},
   ];
 
   const handleMenuSelect = (pageURL) => {
