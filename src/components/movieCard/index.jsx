@@ -34,11 +34,11 @@ export default function MovieCard({ movie, action }) {
   };
 
   return (
-    <Card>
+    <Card sx={{backgroundColor: "#77a169"}}>
       <CardHeader
         avatar={
           movie.favorite ? (
-            <Avatar sx={{ backgroundColor: 'red' }}>
+            <Avatar sx={{ color: 'red', backgroundColor: 'inherit' }}>
               <FavoriteIcon />
             </Avatar>
           ) : null
@@ -79,13 +79,12 @@ export default function MovieCard({ movie, action }) {
         {action(movie)}
       
         <Link to={`/movies/${movie.id}`}>
-          <Button variant="outlined" size="medium" color="primary">
+          <Button  size="medium" sx={{color: "black"}}>
             More Info ...
           </Button>
         </Link>
         
       </CardActions>
-
     </Card>
   );
 }

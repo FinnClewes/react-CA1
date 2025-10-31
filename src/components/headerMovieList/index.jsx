@@ -21,13 +21,13 @@ const Header = (props) => {
       }}
     >
       <IconButton aria-label="go back" onClick={() => navigate(-1)}>
-        <ArrowBackIcon color="primary" fontSize="large" />
+        <ArrowBackIcon sx={{color: "#3f5737"}} fontSize="large" />
       </IconButton>
       <Typography variant="h4" component="h3">
         {title}
       </Typography>
       <IconButton aria-label="go forward" onClick={() => navigate(+1)}>
-        <ArrowForwardIcon color="primary" fontSize="large" />
+        <ArrowForwardIcon sx={{color: "#3f5737"}} fontSize="large" />
       </IconButton>
 
     </Paper>

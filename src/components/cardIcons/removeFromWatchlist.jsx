@@ -15,7 +15,7 @@ const RemoveFromWatchlistIcon = ({ movie }) => {
       aria-label="remove from watchlist"
       onClick={handleRemoveFromWatchlist}
     >
-      <DeleteIcon color="primary" fontSize="large" />
+      <DeleteIcon sx={{color: "#3f5737"}} fontSize="large" />
     </IconButton>
   );
 };

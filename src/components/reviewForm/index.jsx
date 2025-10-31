@@ -51,6 +51,7 @@ const styles = {
     width: "40ch",
   },
   submit: {
+    backgroundColor: "#3f5737",
     marginRight: 2,
   },
   snack: {
